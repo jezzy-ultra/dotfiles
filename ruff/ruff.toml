@@ -1,0 +1,15 @@
+preview = true
+unsafe-fixes = false
+fix = true
+target-version = "py312"
+
+[format]
+preview = true
+line-ending = "lf"
+docstring-code-format = true
+
+[lint]
+preview = true
+select = ["F", "E", "W", "C", "I", "N", "UP", "YTT", "ANN", "ASYNC", "TRIO", "S", "BLE", "FBT", "B", "A", "COM", "C4", "DTZ", "T10", "DJ", "EM", "EXE", "FA", "ISC", "ICN", "LOG", "G", "INP", "PIE", "T20", "PYI", "PT", "Q", "RSE", "RET", "SLF", "SLOT", "SIM", "TID", "TCH", "INT", "ARG", "PTH", "TD", "FIX", "ERA", "PD", "PGH", "PL", "TRY", "FLY", "AIR", "PERF", "FURB", "RUF"]
+ignore = ["W191", "E111", "E114", "E117", "D206", "D300", "Q000", "Q001", "Q002", "Q003", "COM812", "COM819", "ISC001", "ISC002"]
+unfixable = ["F401", "F541", "F601", "F602", "F841"]
