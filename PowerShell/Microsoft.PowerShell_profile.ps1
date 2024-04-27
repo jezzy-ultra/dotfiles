@@ -1,3 +1,7 @@
+# aliases
+Set-Alias -Name touch -Value New-Item
+
+
 # colors
 Set-PSReadLineOption -Colors @{
     Command = "#83D5DC"
