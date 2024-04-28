@@ -1,5 +1,5 @@
 preview = true
-unsafe-fixes = false
+unsafe-fixes = true
 fix = true
 target-version = "py312"
 
