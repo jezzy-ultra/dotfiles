@@ -2,6 +2,7 @@ preview = true
 unsafe-fixes = false
 fix = true
 target-version = "py312"
+output-format = "grouped"
 
 [format]
 preview = true
