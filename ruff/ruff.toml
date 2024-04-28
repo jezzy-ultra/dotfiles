@@ -4,10 +4,12 @@ fix = true
 target-version = "py312"
 output-format = "grouped"
 
+
 [format]
 preview = true
 line-ending = "lf"
 docstring-code-format = true
+
 
 [lint]
 preview = true
@@ -91,6 +93,7 @@ ignore = [
 
 ]
 unfixable = ["F401", "F541", "F601", "F602", "F841",]
+
 
 [lint.flake8-annotations]
 mypy-init-return = true  # allow omitting return type for __init__()
