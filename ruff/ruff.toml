@@ -71,6 +71,7 @@ select = [
     "RUF",
 ]
 ignore = [
+    # start: recommended rules to disable to avoid formatter conflicts
     "W191",
     "E111",
     "E114",
@@ -85,5 +86,7 @@ ignore = [
     "COM819",
     "ISC001",
     "ISC002",
+    # end
+
 ]
 unfixable = ["F401", "F541", "F601", "F602", "F841",]
