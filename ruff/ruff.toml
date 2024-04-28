@@ -93,7 +93,7 @@ ignore = [
     "D203",
     "D213",
 ]
-unfixable = ["F401", "F541", "F601", "F602", "F841",]
+unfixable = ["F401", "F541", "F601", "F602", "F841", "D212"]
 
 
 [lint.flake8-annotations]
