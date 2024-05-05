@@ -104,7 +104,7 @@
             },
             "historySize": 9999999,
             "intenseTextStyle": "bold",
-            "opacity": 75,
+            "opacity": 95,
             "useAcrylic": true,
             "useAtlasEngine": true
         },
