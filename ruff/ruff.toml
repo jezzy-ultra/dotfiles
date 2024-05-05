@@ -36,6 +36,7 @@ ignore = [
     "FBT",      # 'boolean traps' (bools as function args)
     "CPY",      # missing copyright notice at start of file
     "T20",      # `print` statements
+    "D105",     # missing docstring in magic method
     "D107",     # missing docstring in `__init__`
     "D213",     # multi-line docstring summary starts at second line
                 #     (ignored in favor of D212, summary at first line)
