@@ -1,11 +1,13 @@
 preview = true
 unsafe-fixes = true
 fix = true
+
 target-version = "py312"
 
 
 [format]
 preview = true
+
 line-ending = "lf"
 docstring-code-format = true
 
