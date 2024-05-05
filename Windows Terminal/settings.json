@@ -1,10 +1,10 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema-preview",
-    "actions": 
+    "actions":
     [
         {
-            "command": 
+            "command":
             {
                 "action": "copy",
                 "singleLine": false
@@ -12,7 +12,7 @@
             "keys": "ctrl+c"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "scrollToMark",
                 "direction": "next"
@@ -20,7 +20,7 @@
             "keys": "ctrl+down"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "scrollToMark",
                 "direction": "previous"
@@ -28,7 +28,7 @@
             "keys": "ctrl+up"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "selectCommand",
                 "direction": "prev"
@@ -40,7 +40,7 @@
             "keys": "ctrl+v"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "selectOutput",
                 "direction": "prev"
@@ -48,7 +48,7 @@
             "keys": "ctrl+shift+w"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "selectOutput",
                 "direction": "next"
@@ -56,7 +56,7 @@
             "keys": "ctrl+shift+s"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "selectCommand",
                 "direction": "next"
@@ -64,7 +64,7 @@
             "keys": "ctrl+alt+shift+s"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "splitPane",
                 "split": "auto",
@@ -88,9 +88,9 @@
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
+    "profiles":
     {
-        "defaults": 
+        "defaults":
         {
             "adjustIndistinguishableColors": "always",
             "colorScheme": "CutiePro",
@@ -98,7 +98,7 @@
             "experimental.retroTerminalEffect": false,
             "experimental.rightClickContextMenu": true,
             "experimental.showMarksOnScrollbar": true,
-            "font": 
+            "font":
             {
                 "face": "JetBrainsMono Nerd Font"
             },
@@ -108,7 +108,7 @@
             "useAcrylic": true,
             "useAtlasEngine": true
         },
-        "list": 
+        "list":
         [
             {
                 "elevate": true,
@@ -131,7 +131,7 @@
             }
         ]
     },
-    "schemes": 
+    "schemes":
     [
         {
             "background": "#0C0C0C",
