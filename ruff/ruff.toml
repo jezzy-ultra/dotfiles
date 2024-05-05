@@ -15,6 +15,10 @@ docstring-code-format = true
 [lint]
 preview = true
 
+allowed-confusables = [
+    "–"  # en-dash (U+2013)
+]
+
 # https://docs.astral.sh/ruff/rules/
 select = ["ALL"]
 ignore = [
