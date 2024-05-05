@@ -12,88 +12,47 @@ docstring-code-format = true
 
 [lint]
 preview = true
-select = [
-    "F",
-    "E",
-    "W",
-    "C90",
-    "I",
-    "N",
-    "D",
-    "UP",
-    "YTT",
-    "ANN",
-    "ASYNC",
-    "TRIO",
-    "S",
-    "BLE",
-    "FBT",
-    "B",
-    "A",
-    "COM",
-#    "CPY",
-    "C4",
-    "DTZ",
-    "T10",
-    "DJ",
-    "EM",
-    "EXE",
-    "FA",
-    "ISC",
-    "ICN",
-    "LOG",
-    "G",
-    "INP",
-    "PIE",
-#    "T20",
-    "PYI",
-    "PT",
-    "Q",
-    "RSE",
-    "RET",
-    "SLF",
-    "SLOT",
-    "SIM",
-    "TID",
-    "TCH",
-    "INT",
-    "ARG",
-    "PTH",
-    "TD",
-    "FIX",
-    "ERA",
-    "PD",
-    "PGH",
-    "PL",
-    "TRY",
-    "FLY",
-    "AIR",
-    "PERF",
-    "FURB",
-    "RUF",
-]
-ignore = [
-    # start: recommended rules to disable to avoid formatter conflicts
-    "W191",
-    "E111",
-    "E114",
-    "E117",
-    "D206",
-    "D300",
-    "Q000",
-    "Q001",
-    "Q002",
-    "Q003",
-    "COM812",
-    "COM819",
-    "ISC001",
-    "ISC002",
-    # end
 
-    "D203",
-    "D213",
+# https://docs.astral.sh/ruff/rules/
+select = ["ALL"]
+ignore = [
+    ### recommended rules to disable to avoid formatter conflicts
+    "W191",     # tab indentation
+    "E111",     # indentation not a valid multiple of indent-width
+    "E114",     # comment indentation not a valid multiple of indent-width
+    "E117",     # comment over-indented
+    "D206",     # docstring indented with tabs
+    "D300",     # triple single-quotes
+    "Q000",     # inline strings single-quoted
+    "Q001",     # multi-line string single-quoted
+    "Q002",     # docstring single-quoted
+    "Q003",     # avoidable escapes due to quote style
+    "COM812",   # missing trailing comma
+    "COM819",   # prohibited trailing comma
+    "ISC001",   # implicitly-concatenated string literal on one line
+    "ISC002",   # implicitly-concatenated string literal over multiple lines
+    ###
+
+    "FBT",      # 'boolean traps' (bools as function args)
+    "CPY",      # missing copyright notice at start of file
+    "T20",      # `print` statements
+    "D107",     # missing docstring in `__init__`
+    "D213",     # multi-line docstring summary starts at second line
+                #     (ignored in favor of D212, summary at first line)
+    "S311",     # use of `random`
+    "PLR0913",  # too many function args (lint.pylint.max-args, default 5)
+    "PLR0917",  # too many positional function args
+                #     (lint.pylint.max-positional-args, default 5)
 ]
-unfixable = ["F401", "F541", "F601", "F602", "F841", "D200", "D212",]
+unfixable = [
+    "F401",     # unused import
+    "F541",     # f-string without placeholders
+    "F601",     # dictionary key literal name repeated
+    "F602",     # dictionary key name repeated
+    "F841",     # unused variable
+    "D200",     # overlong one-line docstring
+    "D212",     # multi-line docstring summary doesn't start at first line
+]
 
 
 [lint.flake8-annotations]
