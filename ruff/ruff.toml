@@ -45,11 +45,16 @@ ignore = [
     "D105",     # missing docstring in magic method
     "D107",     # missing docstring in `__init__`
     "D213",     # multi-line docstring summary starts at second line
-                #     (ignored in favor of D212, summary at first line)
+                #     (ignored in favor of D212: summary not at first line)
+    "D400",     # first line of docstring should end in period
+                #     (ignored in favor of D416: doesn't end with period,
+                #      exclamation point or question mark)
     "S311",     # use of `random`
-    "PLR0913",  # too many function args (lint.pylint.max-args, default 5)
+    "PLR0913",  # too many function args
+                #     (configure with [lint.pylint] max-args, default: 5)
     "PLR0917",  # too many positional function args
-                #     (lint.pylint.max-positional-args, default 5)
+                #     (configure with [lint.pylint] max-positional-args, default: 5)
+    "TRY301",   # `raise` within `try` block
 ]
 unfixable = [
     "F401",     # unused import
