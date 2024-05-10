@@ -6,15 +6,6 @@
         {
             "command": 
             {
-                "action": "scrollToMark",
-                "direction": "previous"
-            },
-            "id": "User.scrollToMark.D3F0B923",
-            "keys": "ctrl+up"
-        },
-        {
-            "command": 
-            {
                 "action": "copy",
                 "singleLine": false
             },
@@ -29,6 +20,15 @@
             },
             "id": "User.scrollToMark.2A0DA8E0",
             "keys": "ctrl+down"
+        },
+        {
+            "command": 
+            {
+                "action": "scrollToMark",
+                "direction": "previous"
+            },
+            "id": "User.scrollToMark.D3F0B923",
+            "keys": "ctrl+up"
         },
         {
             "command": 
@@ -56,20 +56,20 @@
         {
             "command": 
             {
-                "action": "selectCommand",
-                "direction": "next"
-            },
-            "id": "User.selectCommand.2A0DA8E0",
-            "keys": "ctrl+alt+shift+s"
-        },
-        {
-            "command": 
-            {
                 "action": "selectOutput",
                 "direction": "next"
             },
             "id": "User.selectOutput.2A0DA8E0",
             "keys": "ctrl+shift+s"
+        },
+        {
+            "command": 
+            {
+                "action": "selectCommand",
+                "direction": "next"
+            },
+            "id": "User.selectCommand.2A0DA8E0",
+            "keys": "ctrl+alt+shift+s"
         },
         {
             "command": 
@@ -101,18 +101,20 @@
     {
         "defaults": 
         {
-            "adjustIndistinguishableColors": "always",
+            "antialiasingMode": "grayscale",
             "autoMarkPrompts": true,
             "colorScheme": "CutiePro",
             "experimental.retroTerminalEffect": false,
             "experimental.rightClickContextMenu": true,
             "font": 
             {
-                "face": "JetBrainsMono Nerd Font"
+                "face": "Monaco",
+                "size": 13
             },
             "historySize": 9999999,
             "intenseTextStyle": "bold",
-            "opacity": 95,
+            "opacity": 100,
+            "padding": "50",
             "showMarksOnScrollbar": true,
             "useAcrylic": true
         },
