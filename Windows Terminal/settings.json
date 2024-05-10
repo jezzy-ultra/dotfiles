@@ -7,10 +7,10 @@
             "command": 
             {
                 "action": "scrollToMark",
-                "direction": "next"
+                "direction": "previous"
             },
-            "id": "User.scrollToMark.2A0DA8E0",
-            "keys": "ctrl+down"
+            "id": "User.scrollToMark.D3F0B923",
+            "keys": "ctrl+up"
         },
         {
             "command": 
@@ -25,15 +25,10 @@
             "command": 
             {
                 "action": "scrollToMark",
-                "direction": "previous"
+                "direction": "next"
             },
-            "id": "User.scrollToMark.D3F0B923",
-            "keys": "ctrl+up"
-        },
-        {
-            "command": "paste",
-            "id": "User.paste",
-            "keys": "ctrl+v"
+            "id": "User.scrollToMark.2A0DA8E0",
+            "keys": "ctrl+down"
         },
         {
             "command": 
@@ -43,6 +38,20 @@
             },
             "id": "User.selectCommand.D3F0B923",
             "keys": "ctrl+alt+shift+w"
+        },
+        {
+            "command": "paste",
+            "id": "User.paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": 
+            {
+                "action": "selectOutput",
+                "direction": "prev"
+            },
+            "id": "User.selectOutput.D3F0B923",
+            "keys": "ctrl+shift+w"
         },
         {
             "command": 
@@ -61,15 +70,6 @@
             },
             "id": "User.selectOutput.2A0DA8E0",
             "keys": "ctrl+shift+s"
-        },
-        {
-            "command": 
-            {
-                "action": "selectOutput",
-                "direction": "prev"
-            },
-            "id": "User.selectOutput.D3F0B923",
-            "keys": "ctrl+shift+w"
         },
         {
             "command": 
