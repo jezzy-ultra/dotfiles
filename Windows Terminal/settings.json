@@ -1,10 +1,10 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema-preview",
-    "actions": 
+    "actions":
     [
         {
-            "command": 
+            "command":
             {
                 "action": "copy",
                 "singleLine": false
@@ -13,7 +13,7 @@
             "keys": "ctrl+c"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "scrollToMark",
                 "direction": "next"
@@ -22,7 +22,7 @@
             "keys": "ctrl+down"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "scrollToMark",
                 "direction": "previous"
@@ -31,7 +31,7 @@
             "keys": "ctrl+up"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "selectCommand",
                 "direction": "prev"
@@ -45,7 +45,7 @@
             "keys": "ctrl+v"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "selectOutput",
                 "direction": "prev"
@@ -54,7 +54,7 @@
             "keys": "ctrl+shift+w"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "selectOutput",
                 "direction": "next"
@@ -63,7 +63,7 @@
             "keys": "ctrl+shift+s"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "selectCommand",
                 "direction": "next"
@@ -72,7 +72,7 @@
             "keys": "ctrl+alt+shift+s"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "splitPane",
                 "split": "auto",
@@ -91,34 +91,33 @@
     "copyFormatting": "none",
     "copyOnSelect": true,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-    "newTabMenu": 
+    "newTabMenu":
     [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
+    "profiles":
     {
-        "defaults": 
+        "defaults":
         {
-            "antialiasingMode": "grayscale",
+            "adjustIndistinguishableColors": "always",
             "autoMarkPrompts": true,
             "colorScheme": "CutiePro",
             "experimental.retroTerminalEffect": false,
             "experimental.rightClickContextMenu": true,
-            "font": 
+            "font":
             {
-                "face": "Monaco",
-                "size": 13
+                "face": "JetBrainsMono Nerd Font"
             },
             "historySize": 9999999,
             "intenseTextStyle": "bold",
-            "opacity": 100,
-            "padding": "50",
+            "opacity": 95,
+            "padding": "8",
             "showMarksOnScrollbar": true,
             "useAcrylic": true
         },
-        "list": 
+        "list":
         [
             {
                 "elevate": true,
@@ -128,10 +127,11 @@
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "guid": "{bc2da056-dd06-5879-b969-1dfcefc8d2c7}",
+                "elevate": true,
+                "guid": "{aab79973-318f-43b6-a9bc-b4096493753f}",
                 "hidden": false,
-                "name": "openSUSE-Tumbleweed",
-                "source": "Windows.Terminal.Wsl"
+                "name": "Nushell",
+                "source": "nu"
             },
             {
                 "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
@@ -141,7 +141,7 @@
             }
         ]
     },
-    "schemes": 
+    "schemes":
     [
         {
             "background": "#181818",
