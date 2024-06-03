@@ -39,21 +39,33 @@ ignore = [
     "ISC002",   # implicitly-concatenated string literal over multiple lines
     ###
 
-    "FBT",      # 'boolean traps' (bools as function args)
+#    "FBT",      # 'boolean traps' (bools as function args)
     "CPY",      # missing copyright notice at start of file
     "T20",      # `print` statements
+#    "D101",     # missing docstring in public class
+#    "D103",     # missing docstring in public function
     "D105",     # missing docstring in magic method
     "D107",     # missing docstring in `__init__`
+    "D203",     # class docstring not preceded by a single blank line
+                #   (ignored in favor of D211: class docstring preceded
+                #    by blank line(s))
     "D213",     # multi-line docstring summary starts at second line
-                #     (ignored in favor of D212: summary not at first line)
+                #   (ignored in favor of D212: summary not at first line)
     "D400",     # first line of docstring should end in period
-                #     (ignored in favor of D416: doesn't end with period,
-                #      exclamation point or question mark)
+                #   (ignored in favor of D416: doesn't end with period,
+                #    exclamation point or question mark)
+    "UP007",    # `typing.Union[]`
+#    "UP014",    # `NamedTuple` declarations using functional syntax instead of class
     "S311",     # use of `random`
+#    "ERA001",   # commented-out code
     "PLR0913",  # too many function args
-                #     (configure with [lint.pylint] max-args, default: 5)
+                #   (configure with [lint.pylint] max-args, default: 5)
+    "PLR0914",  # too many local variables
     "PLR0917",  # too many positional function args
-                #     (configure with [lint.pylint] max-positional-args, default: 5)
+                #   (configure with [lint.pylint] max-positional-args, default: 5)
+    "PLR2004",  # magic value used in comparison
+    "PLW0603",  # `global` statement to update identifier
+    "TRY003",   # long exception message that isn't defined in the exception class
     "TRY301",   # `raise` within `try` block
 ]
 unfixable = [
