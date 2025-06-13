@@ -16,7 +16,7 @@
 (defalias
     qwr  (layer-switch qwerty)
     cmk  (layer-switch colemakdh)
-    mod   (tap-dance-eager 200 (
+    mod   (tap-dance-eager 400 (
         (layer-while-held fn)
         lctl
     ))
