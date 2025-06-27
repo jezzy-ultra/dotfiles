@@ -1,0 +1,1 @@
+My personal configs :) Structured to work with the dotfile manager [tuckr](https://github.com/RaphGL/tuckr) (remember to set $TUCKR_HOME to the directory `dotfiles` is cloned under if it's not standard).
