@@ -1,0 +1,3 @@
+if [[ $- == *i* && -z "$NO_FISH_BASH" ]]; then
+  exec fish
+fi
