@@ -1,25 +1,20 @@
 theme = "cutiepro"
 
 [editor]
-bufferline = "multiple"
-color-modes = true
-cursorline = true
-default-line-ending = "lf"
-line-number = "relative"
 mouse = false
 scroll-lines = 0
-# scrolloff = 10
+line-number = "relative"
+cursorline = true
+cursorcolumn = false
+continue-comments = false
+bufferline = "multiple"
+color-modes = true
+default-line-ending = "lf"
 trim-final-newlines = true
 trim-trailing-whitespace = true
-
-[editor.cursor-shape]
-normal = "block"
-insert = "bar"
-select = "underline"
-
-[editor.lsp]
-display-progress-messages = true
-display-inlay-hints = true
+popup-border = "all"
+jump-label-alphabet = "tnseridhplfuaowy"
+# end-of-line-diagnostics = "error"
 
 [editor.statusline]
 left = [
@@ -42,11 +37,149 @@ right = [
   "file-encoding",
 ]
 
+[editor.lsp]
+display-progress-messages = true
+auto-signature-help = true
+display-inlay-hints = true
+
+[editor.cursor-shape]
+normal = "block"
+# insert = "bar"
+# select = "underline"
+insert = "block"
+select = "block"
+
+[editor.file-picker]
+hidden = false
+
+[editor.indent-guides]
+render = true
+character = "┊"
+skip-levels = 1
+
+[editor.soft-wrap]
+enable = false
+
 [keys.normal]
+tab = "move_parent_node_end"
+S-tab = "move_parent_node_start"
 ret = ["open_below", "normal_mode"]
 S-ret = ["open_above", "normal_mode"]
+H = "goto_previous_buffer"
+L = "goto_next_buffer"
+X = "extend_line_above"
+A-x = "extend_to_line_bounds"
+A-S-x = "shrink_to_line_bounds"
+"A-C-`" = "switch_to_uppercase"
+backspace = "select_line_below"
+S-backspace = "select_line_above"
+S-up = [
+  "select_mode",
+  "goto_line_end",
+  "extend_line_below",
+  "delete_selection",
+  "move_line_up",
+  "paste_before",
+]
+S-down = [
+  "select_mode",
+  "goto_line_end",
+  "extend_line_below",
+  "delete_selection",
+  "paste_after",
+]
+A-C-k = [
+  "select_mode",
+  "goto_line_end",
+  "extend_line_below",
+  "delete_selection",
+  "move_line_up",
+  "paste_before",
+]
+A-C-j = [
+  "select_mode",
+  "goto_line_end",
+  "extend_line_below",
+  "delete_selection",
+  "paste_after",
+]
+
+[keys.normal.space]
+space = "goto_word"
+
+[keys.normal.space.t]
+w = ":toggle soft-wrap.enable"
+s = ":toggle whitespace.render all none"
+r = ":toggle rulers [80] []"
+g = ":toggle indent-guides.render"
+i = ":toggle lsp.display-inlay-hints"
+"." = ":toggle lsp.auto-signature-help"
+
+[keys.normal.space.n]
+l = ":lsp-restart"
+r = ":config-reload"
+d = ":reload"
+D = ":reload-all"
+
+[keys.select]
+tab = "extend_parent_node_end"
+S-tab = "extend_parent_node_start"
+H = "goto_previous_buffer"
+L = "goto_next_buffer"
+X = "extend_line_above"
+A-x = "extend_to_line_bounds"
+A-S-x = "shrink_to_line_bounds"
+"A-C-`" = ["switch_to_uppercase", "select_mode"]
+backspace = "select_line_below"
+S-backspace = "select_line_above"
+S-up = [
+  "goto_line_end",
+  "extend_line_below",
+  "delete_selection",
+  "move_line_up",
+  "paste_before",
+  "select_mode",
+]
+S-down = [
+  "goto_line_end",
+  "extend_line_below",
+  "delete_selection",
+  "paste_after",
+  "select_mode",
+]
+A-C-k = [
+  "goto_line_end",
+  "extend_line_below",
+  "delete_selection",
+  "move_line_up",
+  "paste_before",
+  "select_mode",
+]
+A-C-j = [
+  "goto_line_end",
+  "extend_line_below",
+  "delete_selection",
+  "paste_after",
+  "select_mode",
+]
+
+[keys.select.space]
+space = "goto_word"
+
+[keys.select.space.t]
+w = ":toggle soft-wrap.enable"
+i = ":toggle lsp.display-inlay-hints"
+g = ":toggle indent-guides.render"
+"." = ":toggle lsp.auto-signature-help"
+
+[keys.select.space.n]
+l = ":lsp-restart"
+r = ":config-reload"
+d = ":reload"
+D = ":reload-all"
 
 [keys.insert]
+S-tab = "move_parent_node_start"
 C-backspace = [
   "normal_mode",
   "move_prev_word_start",
@@ -59,3 +192,4 @@ C-del = [
   "delete_selection_noyank",
   "insert_mode",
 ]
+"C-." = "signature_help"

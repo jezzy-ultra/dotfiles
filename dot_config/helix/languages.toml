@@ -1,6 +1,32 @@
 [[language]]
 name = "markdown"
-# soft-wrap.enable = true
+formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
+auto-format = true
+
+[[language]]
+name = "toml"
+auto-format = true
+
+[language-server.rust-analyzer.config.assist]
+emitMustUse = true
+preferSelf = true
 
 [language-server.rust-analyzer.config.cargo]
 features = "all"
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+extraArgs = [
+  "--fix",
+  "--allow-dirty",
+  # "--",
+]
+
+[language-server.rust-analyzer.config.completion]
+termSearch.enable = true
+
+[language-server.rust-analyzer.config.diagnostics]
+styleLints.enable = true
+
+[language-server.rust-analyzer.config.hover.actions]
+references.enable = true
