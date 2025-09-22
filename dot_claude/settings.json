@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "defaultMode": "plan",
+    "allow": [
+      "Read(*)",
+      "Glob(*)",
+      "Grep(*)",
+      "WebSearch",
+      "WebFetch",
+      "TodoWrite(*)"
+    ],
+    "deny": [
+      "Bash",
+      "BashOutput(*)",
+      "Edit(*)",
+      "MultiEdit(*)",
+      "Write(*)",
+      "NotebookEdit(*)",
+      "Task(*)",
+      "KillBash(*)",
+      "ExitPlanMode"
+    ],
+    "disableBypassPermissionsMode": "disable"
+  }
+}
