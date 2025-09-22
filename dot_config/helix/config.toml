@@ -194,3 +194,4 @@ C-del = [
   "insert_mode",
 ]
 "C-." = "signature_help"
+"C-c" = "toggle_comments"
