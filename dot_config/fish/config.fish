@@ -19,7 +19,7 @@ fish_config theme choose cutiepro
 
 starship init fish | source
 
-# oh-my-posh init fish --config ~/code/cutiepro/oh-my-posh/cutiepro.omp.toml | source
+# oh-my-posh init fish --config ~/src/cutiepro/oh-my-posh/cutiepro.omp.toml | source
 
 # function rerender_posh_on_dir_change --on-variable PWD
 #     omp_repaint_prompt
