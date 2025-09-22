@@ -4,6 +4,19 @@ formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
 auto-format = true
 
 [[language]]
+name = "rust"
+language-servers = ["scls", "rust-analyzer"]
+
+[[language]]
+name = "stub"
+scope = "text.stub"
+file-types = []
+shebangs = []
+roots = []
+auto-format = false
+language-servers = ["scls"]
+
+[[language]]
 name = "toml"
 auto-format = true
 
@@ -30,3 +43,19 @@ styleLints.enable = true
 
 [language-server.rust-analyzer.config.hover.actions]
 references.enable = true
+
+[language-server.scls]
+command = "simple-completion-language-server"
+
+[language-server.scls.config]
+feature_words = true
+feature_snippets = true
+snippets_first = true
+snippets_inline_by_word_tail = false
+feature_unicode_input = false
+feature_paths = false
+feature_citations = false
+
+[language-server.scls.environment]
+RUST_LOG = "info,simple-completion-language-server=info"
+LOG_FILE = "/tmp/completion.log"
