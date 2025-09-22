@@ -51,11 +51,11 @@ features = "all"
 
 [language-server.rust-analyzer.config.check]
 command = "clippy"
-extraArgs = [
-  "--fix",
-  "--allow-dirty",
-  # "--",
-]
+# extraArgs = [
+#   "--fix",
+#   "--allow-dirty",
+#   # "--",
+# ]
 
 [language-server.rust-analyzer.config.completion]
 termSearch.enable = true
