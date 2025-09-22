@@ -1,2 +1,6 @@
-abbr --add tp 'gtrash put'
-abbr --add dotdot --regex '^\.\.+$' --function multicd
+abbr -a tp 'gtrash put'
+abbr -a cz chezmoi
+abbr -a ca 'chezmoi apply'
+abbr -a ce 'chezmoi edit'
+
+abbr -a dotdot -r '^\.\.+$' -f multicd

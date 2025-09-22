@@ -1,4 +1,4 @@
-function rm --description="Prevent `rm` from being used carelessly" --wraps="rm"
+function rm -w rm -d "prevent `rm` from being used carelessly"
     set color --bold red
     echo -n "Are you sure?"
     set color normal
