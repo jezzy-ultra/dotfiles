@@ -4,6 +4,10 @@ formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
 auto-format = true
 
 [[language]]
+name = "nix"
+auto-format = true
+
+[[language]]
 name = "rust"
 language-servers = ["scls", "rust-analyzer"]
 
