@@ -16,6 +16,7 @@ popup-border = "all"
 jump-label-alphabet = "tnseridhplfuaowy"
 # end-of-line-diagnostics = "error"
 rainbow-brackets = true
+rulers = [80]
 
 [editor.statusline]
 left = [
@@ -111,7 +112,7 @@ space = "goto_word"
 [keys.normal.space.t]
 w = ":toggle soft-wrap.enable"
 s = ":toggle whitespace.render all none"
-r = ":toggle rulers [80] []"
+r = ":toggle rulers [] [80]"
 g = ":toggle indent-guides.render"
 i = ":toggle lsp.display-inlay-hints"
 "." = ":toggle lsp.auto-signature-help"
