@@ -15,6 +15,7 @@ trim-trailing-whitespace = true
 popup-border = "all"
 jump-label-alphabet = "tnseridhplfuaowy"
 # end-of-line-diagnostics = "error"
+rainbow-brackets = true
 
 [editor.statusline]
 left = [
