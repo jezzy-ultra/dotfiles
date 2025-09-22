@@ -39,6 +39,9 @@ file-types = [
   { glob = "storage.conf" },
 ]
 
+[language-server.fish-lsp]
+environment = { "fish_lsp_diagnostic_disable_error_codes" = "2002", "fish_lsp_enable_experimental_diagnostics" = "true" }
+
 [language-server.rust-analyzer.config.assist]
 emitMustUse = true
 preferSelf = true
