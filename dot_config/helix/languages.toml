@@ -23,6 +23,21 @@ language-servers = ["scls"]
 [[language]]
 name = "toml"
 auto-format = true
+file-types = [
+  "toml",
+  { glob = "*.toml.jinja" },
+  { glob = "pdm.lock" },
+  { glob = "poetry.lock" },
+  { glob = "Cargo.lock" },
+  { glob = "uv.lock" },
+  { glob = "containers.conf" },
+  { glob = "containers.conf.d/*.conf" },
+  { glob = "containers.conf.modules/*.conf" },
+  { glob = "mounts.conf" },
+  { glob = "policy.conf" },
+  { glob = "registries.conf" },
+  { glob = "storage.conf" },
+]
 
 [language-server.rust-analyzer.config.assist]
 emitMustUse = true
