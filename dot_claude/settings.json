@@ -1,25 +1,29 @@
 {
   "permissions": {
-    "defaultMode": "plan",
     "allow": [
       "Read(*)",
+      "NotebookRead(*)",
       "Glob(*)",
       "Grep(*)",
       "WebSearch",
-      "WebFetch",
-      "TodoWrite(*)"
+      "WebFetch"
     ],
     "deny": [
-      "Bash",
-      "BashOutput(*)",
       "Edit(*)",
       "MultiEdit(*)",
       "Write(*)",
       "NotebookEdit(*)",
-      "Task(*)",
-      "KillBash(*)",
       "ExitPlanMode"
     ],
+    "ask": [
+      "TodoWrite(*)",
+      "Task(*)",
+      "Bash",
+      "BashOutput(*)",
+      "KillBash(*)"
+    ],
+    "defaultMode": "plan",
     "disableBypassPermissionsMode": "disable"
-  }
+  },
+  "alwaysThinkingEnabled": true
 }
