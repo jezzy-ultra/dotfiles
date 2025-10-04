@@ -1,4 +1,4 @@
-fish_add_path --global ~/.cargo/bin
+fish_add_path --global ~/.cargo/bin ~/.npm-global/bin
 
 set -gx EDITOR hx
 
