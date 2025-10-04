@@ -14,29 +14,41 @@ trim-final-newlines = true
 trim-trailing-whitespace = true
 popup-border = "all"
 jump-label-alphabet = "tnseridhplfuaowy"
-# end-of-line-diagnostics = "error"
-rainbow-brackets = true
 rulers = [80]
+idle-timeout = 1000
+end-of-line-diagnostics = "hint"
+# rainbow-brackets = true
 
 [editor.statusline]
+diagnostics = ["hint", "info", "warning", "error"]
+workspace-diagnostics = ["hint", "info", "warning", "error"]
 left = [
   "mode",
+  "spacer",
+  "spacer",
+  "read-only-indicator",
+  "file-modification-indicator",
+  "spacer",
   "spinner",
 ]
 center = [
-  "read-only-indicator",
+  "current-working-directory",
+  "spacer",
+  "spacer",
   "file-name",
-  "file-modification-indicator",
+  "spacer",
   "spacer",
   "version-control",
 ]
 right = [
   "diagnostics",
-  "selections",
-  "register",
-  "position",
-  "position-percentage",
   "file-encoding",
+  "register",
+  "selections",
+  "position",
+  "separator",
+  "spacer",
+  "position-percentage",
 ]
 
 [editor.lsp]
@@ -61,6 +73,9 @@ skip-levels = 1
 
 [editor.soft-wrap]
 enable = false
+
+[editor.inline-diagnostics]
+cursor-line = "hint"
 
 [keys.normal]
 tab = "move_parent_node_end"
@@ -105,19 +120,25 @@ A-C-j = [
   "delete_selection",
   "paste_after",
 ]
+C-space = "completion"
 
 [keys.normal.space]
 space = "goto_word"
 
 [keys.normal.space.t]
+e = ":toggle end-of-line-diagnostics disable hint"
+a = ":toggle auto-completion"
+c = ":toggle continue-comments"
 w = ":toggle soft-wrap.enable"
 s = ":toggle whitespace.render all none"
 r = ":toggle rulers [] [80]"
+b = ":toggle rainbow-brackets"
 g = ":toggle indent-guides.render"
 i = ":toggle lsp.display-inlay-hints"
 "." = ":toggle lsp.auto-signature-help"
 
 [keys.normal.space.n]
+c = ":change-current-directory"
 l = ":lsp-restart"
 r = ":config-reload"
 d = ":reload"
@@ -164,17 +185,25 @@ A-C-j = [
   "paste_after",
   "select_mode",
 ]
+C-space = "completion"
 
 [keys.select.space]
 space = "goto_word"
 
 [keys.select.space.t]
+e = ":toggle end-of-line-diagnostics disable hint"
+a = ":toggle auto-completion"
+c = ":toggle continue-comments"
 w = ":toggle soft-wrap.enable"
-i = ":toggle lsp.display-inlay-hints"
+s = ":toggle whitespace.render all none"
+r = ":toggle rulers [] [80]"
+b = ":toggle rainbow-brackets"
 g = ":toggle indent-guides.render"
+i = ":toggle lsp.display-inlay-hints"
 "." = ":toggle lsp.auto-signature-help"
 
 [keys.select.space.n]
+c = ":change-current-directory"
 l = ":lsp-restart"
 r = ":config-reload"
 d = ":reload"
@@ -195,4 +224,5 @@ C-del = [
   "insert_mode",
 ]
 "C-." = "signature_help"
-"C-c" = "toggle_comments"
+C-space = "completion"
+C-c = "toggle_comments"
